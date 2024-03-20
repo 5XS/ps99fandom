@@ -1,0 +1,26 @@
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes hue-rotate-effect {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.moving-gradient-img {
+  background: linear-gradient(to bottom right, #ff0000, #00ff00); 
+  background-size: 200% 200%; 
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-move 0s linear infinite alternate, hue-rotate-effect 2s infinite;
+}
